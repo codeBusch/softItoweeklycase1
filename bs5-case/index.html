@@ -18,21 +18,26 @@
         />
         <style>
             :root{
-              --bs-primary-rgb: 250,247,242;
+              --bs-primary-rgb: 250,247,242; /*krem */
+              --bs-secondary-rgb: 255,255,255; /* white*/
             }
             .navbar-image{
                 background-image: url("assets/mvp-banner.png");
                 height: 90vh;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
 
             }
         </style>
     </head>
 
     <body>
-        <div class="navbar-top navbar-image bg-primary">
+        <div class="navbar-top navbar-image bg-primary bg-img-fluid">
             <div class="container">
                 <div class="d-flex flex-column align-items-center text-center h1 gap-5  pt-5 text-white  justify-content-center">
-                    <h1>Teknolojik Yemekler</h1>
+                  
+                    <img src="./assets/logo.svg" alt="">
                     <div>
 
                         <p>fırsatı kaçırma</p>  
@@ -44,23 +49,38 @@
             </div>
            
         </div>
+
         <div class="navbar-bottom bg-white">
             <div class="container">
-                <div class="d-flex space-between justify-content-between align-items-center p-3">
-                    <a class=> <img class="me-3" height="32px" width="32px" src="./assets/noodles.png" alt="">Ramen</a>
-                    <a> <img class="me-3"  height="32px" width="32px" src="./assets/pizza_1656249.png" alt=""> Pizza</a>
-                    <a> <img class="me-3"  height="32px" width="32px" src="./assets/burger_1256423.png" alt=""> Burger</a>
-                    <a> <img class="me-3"  height="32px" width="32px" src="./assets/fries.webp" alt=""> French fries</a>
+                <div class="d-flex space-between justify-content-between align-items-center py-3">
+                    <a> <img class="me-3" height="32px" width="32px" src="./assets/noodles.png" alt=""> YENİ! Kore </a>
+                    <a> <img class="me-3"  height="32px" width="32px" src="./assets/pizza_1656249.png" alt=""> Pizza </a>
+                    <a> <img class="me-3"  height="32px" width="32px" src="./assets/burger_1256423.png" alt=""> Burger </a>
+                    <a> <img class="me-3"  height="32px" width="32px" src="./assets/fries.webp" alt=""> Kızartmalar </a>
                     <a> <img class="me-3"  height="32px" width="32px" src="./assets/fast-food-icon.jpg" alt=""> Fast food</a>   
-                    <a> <img class="me-3"  height="32px" width="32px" src="./assets/gazli-icecek.jpg " alt=""> Soft drinks</a>
+                    <a> <img class="me-3"  height="32px" width="32px" src="./assets/gazli-icecek.jpg " alt=""> Gazlı İçecek</a>
                 </div>
             </div>
         </div>
-        <div class="cards bg-primary">
-            <div>sa</div>
-            <div>sa</div>
-            <div>sa</div>
-            <div>sa</div>
+        <div class="cards bg-primary py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img src="./assets/cards/kart-1.png" alt="" srcset="">
+                    </div>
+                    <div class="col ">
+                        <div class="col">
+                            <img src="./assets/cards/kart-2.png" alt="" srcset="">
+                        </div>
+                        <div class="col mt-4">
+                            <img src="./assets/cards/kart-3.png" alt="" srcset="">
+                        </div>
+                    </div>
+                <div class=""> 
+                    
+                </div>
+            </div>
+          
         </div>
 
 

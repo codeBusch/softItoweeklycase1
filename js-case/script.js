@@ -203,3 +203,5 @@ Fibonecci dizisi 1 1 değerleri ile başlar ve yeni değer kendinden öndeki iki
 //     isNaN(numb)?alert("geçersiz sayı girdiniz f5 atınız") : ( numb%2 ==0 ? console.log("girdiğiniz sayi çift sayidir") : console.log("girdiğiniz sayi tektir"))
 // }
 // isEvenorOdd()
+
+
