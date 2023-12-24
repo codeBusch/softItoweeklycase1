@@ -16,10 +16,40 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <!-- font family -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;600&family=Pacifico&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
+
         <style>
+             /*
+             footer color background-color: rgb(26 26 26);
+               fotoer border-top background-color: rgb(43 43 43);
+             */
+            *{
+            font-family: 'Montserrat',sans-serif;
+            }
+            .font-italic{
+                /* background-color: yellow; */
+                /* border: none; */
+                /* font-weight: 600; */
+                /* cursor: pointer; */
+
+                font-family: 'Pacifico', cursive;
+                /* font-size: 18px; */
+            }
             :root{
               --bs-primary-rgb: 250,247,242; /*krem */
-              --bs-secondary-rgb: 255,255,255; /* white*/
+              --bs-secondary-rgb: 255,255,255; /* white todo belki değiştir*/
+            }
+            @media (max-width: 1400px) {
+            .responsive-card {
+                margin-top: 1.5rem; /* Ayarlamak istediğiniz boşluk değeri */
+                
+            }
+            
             }
             .navbar-image{
                 background-image: url("assets/mvp-banner.png");
@@ -28,6 +58,12 @@
                 background-repeat: no-repeat;
                 background-size: cover;
 
+            }
+            .menu-list>a:hover{
+                background: #000 !important; 
+                color: white !important;
+                padding: 16px;
+                
             }
         </style>
     </head>
@@ -40,7 +76,7 @@
                     <img src="./assets/logo.svg" alt="">
                     <div>
 
-                        <p>fırsatı kaçırma</p>  
+                        <p class="font-italic text-warning">fırsatı kaçırma</p>  
                         <div>KOD ACIKTIRIR  </div>
                         <div>  PIZZA,DOYURUR</div>
                     </div>
@@ -52,46 +88,45 @@
 
         <div class="navbar-bottom bg-white">
             <div class="container">
-                <div class="d-flex space-between justify-content-between align-items-center py-3">
-                    <a> <img class="me-3" height="32px" width="32px" src="./assets/noodles.png" alt=""> YENİ! Kore </a>
-                    <a> <img class="me-3"  height="32px" width="32px" src="./assets/pizza_1656249.png" alt=""> Pizza </a>
-                    <a> <img class="me-3"  height="32px" width="32px" src="./assets/burger_1256423.png" alt=""> Burger </a>
-                    <a> <img class="me-3"  height="32px" width="32px" src="./assets/fries.webp" alt=""> Kızartmalar </a>
-                    <a> <img class="me-3"  height="32px" width="32px" src="./assets/fast-food-icon.jpg" alt=""> Fast food</a>   
-                    <a> <img class="me-3"  height="32px" width="32px" src="./assets/gazli-icecek.jpg " alt=""> Gazlı İçecek</a>
+                <div class="d-flex space-between justify-content-between align-items-center py-3 menu-list">
+                    <a class="text-decoration-none rounded-pill text-black"> <img class="me-3" height="32px" width="32px" src="./assets/noodles.png" alt=""> YENİ! Kore </a>
+                    <a class="text-decoration-none rounded-pill text-black"> <img class="me-3"  height="32px" width="32px" src="./assets/pizza_1656249.png" alt=""> Pizza </a>
+                    <a class="text-decoration-none rounded-pill text-black"> <img class="me-3"  height="32px" width="32px" src="./assets/burger_1256423.png" alt=""> Burger </a>
+                    <a class="text-decoration-none rounded-pill text-black"> <img class="me-3"  height="32px" width="32px" src="./assets/fries.webp" alt=""> Kızartmalar </a>
+                    <a class="text-decoration-none rounded-pill text-black"> <img class="me-3"  height="32px" width="32px" src="./assets/fast-food-icon.jpg" alt=""> Fast food</a>   
+                    <a class="text-decoration-none rounded-pill text-black"> <img class="me-3"  height="32px" width="32px" src="./assets/gazli-icecek.jpg " alt=""> Gazlı İçecek</a>
                 </div>
             </div>
         </div>
-        <div class="cards bg-primary py-5">
+        <div class="cards bg-primary pt-5">
             <div class="container">
                 <div class="row">
                     <div class="col ">
                         <div class="position-relative ">
                             <img src="./assets/cards/kart-1.png" alt="" srcset="">
-                            <div class="position-absolute  bottom-50 start-0 p-5  ">
+                            <div class="position-absolute bottom-0 end-50 py-5 px-2 mb-5 ">
                                
-                                <div class="d-flex flex-column translate-end-y translate-end-x ">
+                                <div class="d-flex flex-column mb-5">
                                     <div class="h1 text-white fw-bold">Özel </div>
                                     <div class="h1 text-white">Lezzetus</div>
                                     <div class="text-white my-3 fw-bold">Position:Absolute Acı Burger</div>
-                                    <button class="btn btn-light text-danger rounded-pill " style="max-width: 50%;"> Sipariş Ver</button>
+                                    <button class="btn btn-light text-danger rounded-pill mb-5" style="max-width: 50%;"> Sipariş Ver</button>
                                 </div>
                              
                             </div>
                         </div>
                       
                     </div>
-                    <div class="col ">
+                    <div class="col responsive-card">
                         <div class="col">
                             <div class="position-relative ">    
                                 <img src="./assets/cards/kart-2.png" alt="" srcset="">
-                                <div class="position-absolute  bottom-0 start-0 p-5  ">
+                                <div class="position-absolute  bottom-0 start-0 p-5">
                                    
-                                    <div class="d-flex flex-column translate-end-y translate-end-x ">
-                                        <div class="h1 text-white fw-bold">Özel </div>
-                                        <div class="h1 text-white">Lezzetus</div>
-                                        <div class="text-white my-3 fw-bold">Position:Absolute Acı Burger</div>
-                                        <button class="btn btn-light text-danger rounded-pill " style="max-width: 50%;"> Sipariş Ver</button>
+                                    <div class="d-flex flex-column translate-end-y translate-end-x  ">
+                                        <div class="h3 text-white fw-bold">Hackathlon </div>
+                                        <div class="h3 text-white"> Burger Menü</div>
+                                        <button class="btn btn-light text-danger rounded-pill mt-3 " style="max-width: 70%;"> Sipariş Ver</button>
                                     </div>
                                  
                                 </div>
@@ -103,21 +138,157 @@
                                 <div class="position-absolute  bottom-0 start-0 p-5  ">
                                    
                                     <div class="d-flex flex-column translate-end-y translate-end-x ">
-                                        <div class="h1 text-white fw-bold">Özel </div>
-                                        <div class="h1 text-white">Lezzetus</div>
-                                        <div class="text-white my-3 fw-bold">Position:Absolute Acı Burger</div>
-                                        <button class="btn btn-light text-danger rounded-pill " style="max-width: 50%;"> Sipariş Ver</button>
+                                        <div class="fw-bold h3 text-black fw-bold"><span class="text-danger"> Çoooook</span>  hızlı</div>
+                                        <div class="fw-bold h3 text-black  ">npm gibi kurye</div>
+                                    
+                                        <button class="my-2 btn btn-light text-danger rounded-pill mt-4 " style="max-width: 60%;"> Sipariş Ver</button>
                                     </div>
                                  
                                 </div>
                             </div>
                         </div>
                     </div>
-                <div class=""> 
                     
-                </div>
             </div>
           
+        </div>
+        <div class="text-area">
+
+            <div class="container bg-primary ">
+                <div class=" text-black text-center pt-5 pb-3">
+    
+                    <p class="font-italic text-danger">en çok paketlenen menüler</p>
+                    <div class="h1">Acıktıran Kodlara Doyuran Lezzetler</div>
+                </div>
+            </div>
+        </div> 
+        <div class="menu">
+            <div class="container">
+                <div class="d-flex justify-content-between menu-list ">
+                    <a class="bg-white btn  rounded-pill text-decoration-none text-black hover-shadow ">
+                        <div class="px-4 py-3">
+                            <img class="me-1" height="32px" width="32px" src="./assets/noodles.png" alt="">Ramen
+                        </div>
+                    </a>
+                    <a  class=" btn bg-white rounded-pill text-decoration-none text-black">
+                        <div class="px-4 py-3">
+                            <img class="me-1"  height="32px" width="32px" src="./assets/pizza_1656249.png" alt=""> Pizza
+                        </div>
+                    </a>
+                    <a  class=" btn bg-white rounded-pill text-decoration-none text-black"> 
+                        <div class="px-4 py-3">
+                            <img class="me-1"  height="32px" width="32px" src="./assets/burger_1256423.png" alt=""> Burger
+                        </div>
+                    </a>
+                    <a  class="btn bg-white rounded-pill text-decoration-none text-black">
+                        <div class="px-4 py-3">
+                            <img class="me-1"  height="32px" width="32px" src="./assets/fries.webp" alt=""> French fries
+                        </div>
+                    </a>
+                    <a  class="btn bg-white rounded-pill text-decoration-none text-black"> 
+                        <div class="px-4 py-3"> 
+                            <img class="me-1"  height="32px" width="32px" src="./assets/fast-food-icon.jpg" alt=""> Fast food
+                        </div>
+                    </a>   
+
+                    <a  class="btn bg-white rounded-pill text-decoration-none text-black"> 
+                    <div class="px-4 py-3">
+                        <img class="me-1"  height="32px" width="32px" src="./assets/gazli-icecek.jpg " alt=""> Soft drinks
+                    </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="products bg-primary mt-5 pb-5">
+            <div class="container overflow-hidden">
+                <div class="row gy-5">
+                  <div class="col-4">
+                    <div class="p-3  bg-white  rounded card h-100">
+
+                        <div class="d-flex flex-column"> 
+                            <img class="rotate-img" src="./assets/pizza-1.jpg" alt="" srcset="">
+                            <div class="container">
+                                <h3>Terminal Pizza</h3> 
+                                <div class="d-flex justify-content-between">
+                                    <span>4.9</span> <span>(200)</span> <strong>60₺</strong>
+                                </div>
+                            </div>
+                              
+                         
+                          </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="p-3 bg-white rounded card h-100">
+                        <div class="d-flex flex-column"> 
+                            <img class="rotate-img" src="./assets/pizza-2.jpg" alt="" srcset="">
+                            
+                            <div class="container">
+                                <h3>Terminal Pizza</h3> 
+                                <div class="d-flex justify-content-between">
+                                    <span>4.9</span> <span>(200)</span> <strong>60₺</strong>
+                                </div>
+                            </div>
+                         
+                          </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="p-3 bg-white rounded card h-100">
+                        <div class="d-flex flex-column"> 
+                            <img class="rotate-img" src="./assets/burger-3.jpg" alt="" srcset="">
+                            
+                            <div class="container">
+                                <div class="fw-bold h5">useEffect Tavuklu Burger</div> 
+                                <div class="d-flex justify-content-between">
+                                    <span>4.9</span> <span>(200)</span> <strong>60₺</strong>
+                                </div>
+                            </div>
+                         
+                          </div>
+                    </div>
+                  </div>
+                
+                </div>
+            </div>
+        </div>
+        <div class="footer bg-dark">
+            <div class="container">
+                <div class="footer-top pt-5 pb-5">
+                    <div class="d-flex gap-5">
+                        <div class="d-flex flex-column text-white">
+                            <img src="./assets/logo.svg" alt="" srcset="">
+                            <div> adress</div>
+                            <div> mail</div>
+                            <div> phone</div>
+                        </div>
+                        <div class="d-flex flex-column text-white">
+                            <img src="./assets/logo.svg" alt="" srcset="">
+                            <div> adress</div>
+                            <div> mail</div>
+                            <div> phone</div>
+                        </div>
+                        <div class="d-flex flex-column text-white">
+                            <img src="./assets/logo.svg" alt="" srcset="">
+                            <div> adress</div>
+                            <div> mail</div>
+                            <div> phone</div>
+                        </div>
+                    </div>
+                  
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer-bottom border-top text-white bg-dark pt-3">
+            <div class="container">
+               <div class="">
+                @senior
+               </div>
+            </div>
+           
         </div>
 
 
